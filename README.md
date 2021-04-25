@@ -2,8 +2,9 @@
 
 
 gcc Servidor.c -o serv.out
-gcc Cliente.c -o cli.out
+
 
 En una consola correr ./serv.out
 
-En otra consola correr ./cli.out 
+En otra consola correr nc 127.0.0.1 8080
+
