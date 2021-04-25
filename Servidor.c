@@ -78,11 +78,9 @@ int main(int argc, char **argv) {
 	printf("Socket escuchando el %d\n", 8080);
 	listen(servidor, 100);
 	int cliente = acceptConnection(servidor);
-	//sendMessage(cliente, "Hola MUNDO!!\n");
-	//sendMessage(cliente, ":) :P :D B) xD");
-	// while(1){
+	sendMessage(cliente, "Hola MUNDO!!\n");
+	sendMessage(cliente, ":) :P :D B) xD\n");
 	receiveData(cliente);
-	// }
 	//sendMessage(cliente, "SI QUIERO MANDO UN MENSAJE MAS LARGO????");
 	return 0;
 
